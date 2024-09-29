@@ -33,12 +33,20 @@ const questions = [
     {
         type: 'list',
         name: 'license',
-        message: 'Enter information about the license of your project.',
-        choices: ['MIT License', 'Apache License 2.0', 'GNU General Public License v3.0 (GPL v3)', 'BSD 3-Clause License', 'Mozilla Public License 2.0', 'The Unlicense', 'None'],
+        message: 'Choose a license for your project.',
+        choices: [
+            'MIT License', 
+            'Apache License 2.0', 
+            'GNU General Public License v3.0 (GPL v3)', 
+            'BSD 3-Clause License', 
+            'Mozilla Public License 2.0', 
+            'The Unlicense', 
+            'None'
+        ],
     },
     {
         type: 'input',
-        name: 'contributions',
+        name: 'contributing',
         message: 'Explain how to contribute to the project.',
     },
     {
@@ -48,8 +56,13 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'questions',
-        message: 'Provide information about how to ask quesitons, such as listing contact information.',
+        name: 'github',
+        message: 'Enter your github username.',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email.',
     },
 ];
 
@@ -58,7 +71,9 @@ function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {
-    
+    inquirer.prompt(questions).then((answers) => {
+        // Do nothing for now
+    })
 }
 
 // Function call to initialize app
