@@ -44,18 +44,18 @@ function renderQuestionsSection(github, email) {
   if (github && email) {
     return `
 If you have any questions about this project, feel free to reach out: \n
-- **GitHub** [${github}](https://github.com/${github})
-- **Email** ${email}
+- **GitHub:** [${github}](https://github.com/${github})
+- **Email:** ${email}
 `;
   } else if (github) {
     return `
 If you have any questions about this project, feel free to reach out: \n
-- **GitHub** [${github}](https://github.com/${github})
+- **GitHub:** [${github}](https://github.com/${github})
 `;
   } else if (email) {
     return `
 If you have any questions about this project, feel free to reach out: \n
-- **Email** ${email}
+- **Email:** ${email}
 `;
   } else {
     return '';
