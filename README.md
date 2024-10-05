@@ -40,6 +40,8 @@ To run the application, navigate to the project folder and run the following com
 
 Follow the prompts to input the required information, and a README file will be generated in the `dist` folder. Copy the contents of the **generatedREADME.md** file and paste it into your project's empty README document. 
 
+[Watch the walkthrough video](https://drive.google.com/file/d/150xIlwX20J1Y2_TAwk94FfmN5BwanOIH/view?usp=sharing) 
+
 ## Credits 
 
 This project includes starter code provided by the OSU coding bootcamp. 
